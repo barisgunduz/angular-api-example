@@ -12,8 +12,8 @@
             <span class="cardNum">5789 **** **** 2847</span>
             <div class="cardBottom">
               <div>
-                <span>Card Holder</span>
-                <p>Mike Smith</p>
+                <span >Card Holder</span>
+                <p *ngFor="let item of cards | keyvalue">{{item.key}}</p>
               </div>
               <div>
                 <span>Expire Date</span>

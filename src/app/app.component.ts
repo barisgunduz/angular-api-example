@@ -19,8 +19,8 @@ export class AppComponent implements OnInit {
       this.li = Response;
       this.billing = this.li[0].billing;
       this.cards = this.li[0].cards;
-      console.log(this.li[0].billing)
-      console.log(this.li[0].cards)
+      console.log("Billing : ",this.li[0].billing)
+      console.log("Cards : ",this.li[0].cards)
     });
   }
 }
