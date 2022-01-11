@@ -1,0 +1,21 @@
+<div class="row card">
+  <h5>Billing Summary</h5>
+  <table class="table" id="tab">
+    <thead>
+      <tr>
+        <th scope="col">Service</th>
+        <th scope="col">Type</th>
+        <th scope="col">Date</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of billing">
+        <td>{{ e["service"] }}</td>
+        <td>{{ e["type"] }}</td>
+        <td>{{ e["date"] }}</td>
+        <td>{{ e["amount"] }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

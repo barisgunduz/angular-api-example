@@ -6,3 +6,156 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.textGreySmall {
+  font-size: 0.75rem;
+  color: #dadada;
+}
+
+.progressText {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  color: #aeaeae;
+}
+
+.fdc {
+  flex-direction: column !important;
+}
+
+table th {
+  font-size: 0.75rem;
+  color: #aeaeae;
+}
+
+table td {
+  color: #404040;
+  font-size: 0.75rem;
+}
+
+.container .card {
+  box-shadow: 1px 1px 10px #e1e1e1;
+  border-radius: 20px;
+}
+
+.card {
+  flex-direction: row;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-no-border {
+  border: none;
+  box-shadow: none !important;
+}
+
+.creditCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #197bbd;
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.creditCard p {
+  margin: 0;
+}
+
+.creditCard span {
+  font-size: 0.5rem;
+  color: rgb(255 255 255 / 69%);
+}
+
+.creditCard .cardNum {
+  color: white !important;
+  font-size: 1rem !important;
+  margin: 0 0 auto;
+  padding-top: 40px;
+  letter-spacing: 0.4rem;
+}
+
+.creditCard .cardBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: -90px;
+}
+
+.creditCardLimit {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.creditCardLimit .progressText span {
+  float: right;
+  color: #404040;
+}
+
+.progress {
+  height: 0.5rem;
+}
+
+.progress-bar {
+  background-color: #307bbd;
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  border-left: 1px solid #ddd;
+}
+
+.balance .creditNums {
+  flex-direction: column;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.balance .creditNums span {
+  font-size: 0.75rem;
+  color: #dadada;
+}
+
+.balance .creditNums .currentBalance {
+  font-size: 1.5rem;
+  color: #307bbd;
+}
+
+.balance .creditNums .availibleCredit {
+  color: #439a86;
+}
+
+.balance .creditNums .avaitingProvisions {
+  color: #bb4430;
+}
+
+.administrators {
+  display: flex;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+.administrators .admin {
+  text-align: center;
+}
+
+.administrators .admin img{
+  border-radius: 15px;
+}
+
+.administrators .admin .adminName {
+  font-size: 0.75rem;
+  color: #aeaeae;
+}
