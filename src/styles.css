@@ -7,6 +7,23 @@ p {
   padding: 0;
 }
 
+a {
+  color: #afafaf;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cdcdcd;
+}
+
+svg {
+  color: #cdcdcd;
+}
+
+.btn {
+  font-size: 0.75rem;
+}
+
 .mt10 {
   margin-top: 10px;
 }
@@ -39,6 +56,77 @@ table td {
   color: #404040;
   font-size: 0.75rem;
 }
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.form-check-input {
+  background-color: #efefef;
+  border: 1px solid #efefef;
+}
+
+.adminPage {
+  display: flex;
+}
+
+.navContent {
+  padding: 20px 20px 0px 20px;
+  margin: 20px;
+}
+
+.addLocationButton {
+  color: #404040;
+  background-color: #ffc145;
+  padding: 0px 5px 0px 5px;
+  border-radius: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+.locationSymbol {
+  padding-top: 20px;
+  width: 25px;
+  height: 35px;
+}
+
+.locationTableSymbol {
+  width: 25px;
+  height: 25px;
+  background-color: #efefef;
+  padding: 4px;
+  margin-left: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #ddd;
+}
+
+.productsTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.navHeader {
+  padding: 20px 20px 0px 20px;
+  margin: 20px;
+}
+
+.navigationCol {
+  border-right: 1px solid #ddd;
+}
+
+.navigationCol .navigationRoute {
+  margin: 20px;
+  padding: 20px;
+}
+
+.navigationRoute li {
+  text-align: center;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
 
 .container .card {
   box-shadow: 1px 1px 10px #e1e1e1;
@@ -47,7 +135,7 @@ table td {
 
 .card {
   flex-direction: row;
-  margin: 20px;
+  margin: 10px 20px;
   padding: 20px;
 }
 
@@ -59,7 +147,7 @@ table td {
 .creditCard {
   display: flex;
   flex-direction: column;
-  background-color: #197bbd;
+  background-image: linear-gradient(#197bbd, #449dd9);
   width: 100%;
   height: 200px;
   border-radius: 30px;
@@ -89,17 +177,31 @@ table td {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-left: -90px;
 }
 
 .creditCardLimit {
-  width: 350px;
   margin-bottom: 20px;
 }
 
 .creditCardLimit .progressText span {
   float: right;
   color: #404040;
+}
+
+.cardActivationButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cardActivationButton span {
+  font-size: 0.75rem;
+  color: #dadada;
+}
+
+.cardActivationButton .form-check-input {
+  height: 1.4em;
+  width: 2.3em;
 }
 
 .progress {
@@ -145,17 +247,53 @@ table td {
   display: flex;
   margin-left: -10px;
   margin-top: 10px;
+  justify-content: space-around;
 }
 
 .administrators .admin {
   text-align: center;
+  flex-direction: column;
+  display: flex;
 }
 
-.administrators .admin img{
+.administrators .admin img {
   border-radius: 15px;
 }
 
 .administrators .admin .adminName {
   font-size: 0.75rem;
   color: #aeaeae;
+}
+
+.invite {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.invite .form-control {
+  width: 80%;
+  font-size: 0.75rem;
+}
+
+.invite button {
+  width: 100%;
+}
+
+.invite .btn-primary {
+  color: #000;
+  background-color: #ffc145;
+  border-color: #ffc145;
+}
+
+.contactSupport {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#ed654c, #d05842);
+  height: 170px;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+  color: white;
 }

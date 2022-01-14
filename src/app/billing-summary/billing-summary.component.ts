@@ -19,7 +19,7 @@ export class BillingSummaryComponent implements OnInit {
         console.log(Response);
         this.li = Response;
         this.billing = this.li[0].billing;
-        console.log('Billing : ', this.li[0].billing);
+        console.log('Billing : ', this.billing);
       });
   }
 }

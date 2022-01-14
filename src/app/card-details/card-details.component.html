@@ -2,17 +2,17 @@
   <h5>Cards</h5>
   <div class="col-8">
     <div class="creditCard">
-      <p>cloudcash</p>
-      <span>premiere account</span>
-      <span class="cardNum">5789 **** **** 2847</span>
+      <p>{{ cards.primaryCard.bank }}</p>
+      <span>{{ cards.primaryCard.type }}</span>
+      <span class="cardNum">{{ cards.primaryCard.number }}</span>
       <div class="cardBottom">
-        <div>
+        <div class="col-6">
           <span>Card Holder</span>
-          <p>Mike Smith</p>
+          <p>{{ cards.primaryCard.name }}</p>
         </div>
-        <div>
+        <div class="col-6">
           <span>Expire Date</span>
-          <p>06/21</p>
+          <p>{{ cards.primaryCard.expiry }}</p>
         </div>
       </div>
     </div>
@@ -27,22 +27,27 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p class="progressText">Expense limit <span>$350 / $4000</span></p>
+      <p class="progressText">Expense limit <span>${{ cards.expense.current }} / ${{ cards.expense.limit }}</span></p>
     </div>
   </div>
   <div class="col-4">
     <div class="balance">
       <div class="creditNums">
-        <p class="currentBalance">$ 2850.75</p>
+        <p class="currentBalance">$ {{ cards.balance.current }}</p>
         <span>Current balance</span>
       </div>
       <div class="creditNums">
-        <p class="availibleCredit">$ 348.75</p>
+        <p class="availibleCredit">$ {{ cards.balance.credit }}</p>
         <span>Availible credit</span>
       </div>
       <div class="creditNums">
-        <p class="avaitingProvisions">$ 285.75</p>
+        <p class="avaitingProvisions">$ {{ cards.balance.provisions }}</p>
         <span>Avaiting provisions</span>
+      </div>
+      <div class="form-check form-switch cardActivationButton">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <!-- <label class="form-check-label" for="flexSwitchCheckDefault">Deactivate Card</label> -->
+        <span>Deactivate Card</span>
       </div>
     </div>
   </div>

@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="row card card-no-border">
+    <div class="card fdc col-6">
+      <p>Administrators</p>
+      <div class="administrators">
+        <div class="admin" *ngFor="let admin of administrators">
+          <!-- <img src={{admin.image}} alt={{admin.name}}/>
+          <span class="adminName">{{admin.name}}</span> -->
+          <img src="https://via.placeholder.com/30/4772B7" alt="" />
+          <span class="adminName">Ann</span>
+        </div>
+        <!-- <div class="admin">
+          <img src="https://via.placeholder.com/30/4772B7" alt="" />
+          <span class="adminName">Ann</span>
+        </div>
+        <div class="admin">
+          <img src="https://via.placeholder.com/30/4772B7" alt="" />
+          <span class="adminName">Monica</span>
+        </div>
+        <div class="admin">
+          <img src="https://via.placeholder.com/30/4772B7" alt="" />
+          <span class="adminName">John</span>
+        </div>
+        <div class="admin">
+          <img src="https://via.placeholder.com/30/4772B7" alt="" />
+          <span class="adminName">Mike</span>
+        </div>
+        <div class="admin">
+          <img src="https://via.placeholder.com/30/4772B7" alt="" />
+          <span class="adminName">Mia</span>
+        </div> -->
+      </div>
+      <div class="invite">
+        <div class="col-8">
+          <input
+          id="name"
+            type="email"
+            class="form-control"
+            placeholder="Enter Email"
+            aria-label="Enter Email"
+            aria-describedby="addon-wrapping"
+            formControlName="email"
+          />
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary">Invite ></button>
+        </div>
+      </div>
+    </div>
+    <div class="contactSupport col-4">
+      <p>Contact Support</p>
+    </div>
+  </div>
+</div>

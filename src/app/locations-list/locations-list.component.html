@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row card">
+    <table class="table" id="tab">
+      <thead>
+        <tr>
+          <th scope="col">Location</th>
+          <th scope="col">Licences</th>
+          <th scope="col">Enrollment Date</th>
+          <th scope="col">Products</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let loc of locations">
+          <td>
+            <div>
+              <img class="locationTableSymbol" src="{{ loc.image }}" />
+              <span> {{ loc.name }}</span>
+            </div>
+          </td>
+          <td>{{ loc.licences }}</td>
+          <td>{{ loc.enrollmentDate | date }}</td>
+          <td class="productsTable">
+            <div *ngIf="loc.products.monitoring">
+              <img class="locationTableSymbol" src="{{ loc.image }}" />
+            </div>
+            <div v-else-if="loc.products.exams">
+              <img class="locationTableSymbol" src="{{ loc.image }}" />
+            </div>
+            <div v-else-if="loc.products.applicationLibrary">
+              <img class="locationTableSymbol" src="{{ loc.image }}" />
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

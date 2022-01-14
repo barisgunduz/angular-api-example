@@ -1,21 +1,24 @@
 <div class="row card card-no-border">
-  <h5>Locations</h5>
-  <div class="card fdc col-3">
+  <h5>Locations <a class="addLocationButton">+</a></h5>
+  <div class="card fdc col-3" *ngFor="let loc of locations | slice: 0:3">
+    <p>{{ loc.licences }}</p>
+    <span class="textGreySmall">Licences</span>
+    <img class="locationSymbol" src="{{ loc.image }}" />
+    <p>{{ loc.name }}</p>
+  </div>
+  <!-- <div class="card fdc col-3">
     <p>350</p>
     <span class="textGreySmall">Licences</span>
-    <!-- icon -->
     <p>Maslak</p>
   </div>
   <div class="card fdc col-3">
     <p>350</p>
     <span class="textGreySmall">Licences</span>
-    <!-- icon -->
     <p>Kadikoy</p>
   </div>
   <div class="card fdc col-3">
     <p>350</p>
     <span class="textGreySmall">Licences</span>
-    <!-- icon -->
     <p>Besiktas</p>
-  </div>
+  </div> -->
 </div>

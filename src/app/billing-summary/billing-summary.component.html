@@ -11,10 +11,10 @@
     </thead>
     <tbody>
       <tr *ngFor="let e of billing">
-        <td>{{ e["service"] }}</td>
-        <td>{{ e["type"] }}</td>
-        <td>{{ e["date"] }}</td>
-        <td>{{ e["amount"] }}</td>
+        <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> {{ e["service"] }}</td>
+        <td>$/{{ e["type"] }}</td>
+        <td>{{ e["date"] | date }}</td>
+        <td>$ {{ e["amount"] }}</td>
       </tr>
     </tbody>
   </table>

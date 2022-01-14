@@ -1,45 +1,54 @@
-<style></style>
-
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <app-card-details></app-card-details>
-      <app-billing-summary></app-billing-summary>
+<div class="adminPage">
+  <div class="col-2 navigationCol">
+    <div class="navHeader">
+      <h1>COOL</h1>
     </div>
-    <div class="col-6">
-      <app-locations></app-locations>
-      <app-module-usage></app-module-usage>
-      <div class="row">
-        <div class="row card card-no-border">
-          <div class="card fdc col-6">
-            <p>Administrators</p>
-            <div class="administrators">
-              <div class="admin">
-                <img src="https://via.placeholder.com/30/4772B7" alt="" />
-                <span class="adminName">Ann</span>
-              </div>
-              <div class="admin">
-                <img src="https://via.placeholder.com/30/4772B7" alt="" />
-                <span class="adminName">Monica</span>
-              </div>
-              <div class="admin">
-                <img src="https://via.placeholder.com/30/4772B7" alt="" />
-                <span class="adminName">John</span>
-              </div>
-              <div class="admin">
-                <img src="https://via.placeholder.com/30/4772B7" alt="" />
-                <span class="adminName">Mike</span>
-              </div>
-              <div class="admin">
-                <img src="https://via.placeholder.com/30/4772B7" alt="" />
-                <span class="adminName">Mia</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="navigationRoute">
+      <ul>
+        <li>
+          <a routerLink="overview"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-graph-up-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+              />
+            </svg>
+            Overview</a
+          >
+        </li>
+        <li>
+          <a routerLink="locations"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list-ul"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+              />
+            </svg>
+            Locations</a
+          >
+        </li>
+      </ul>
     </div>
   </div>
+  <div class="col-10 adminContent">
+    <div class="navContent">
+      <h1>Overview</h1>
+      <span>Get summary of your recent usage &amp; insights</span>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-
-<router-outlet></router-outlet>
